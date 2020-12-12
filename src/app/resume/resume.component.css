@@ -1,0 +1,9 @@
+
+div.resume {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  background-color: lightcyan;
+}

@@ -1,5 +1,5 @@
---temp-output:d:\projects\angular2\jdenekat\jdenekat\obj\Debug\netcoreapp1.0\
---out:d:\projects\angular2\jdenekat\jdenekat\bin\Debug\netcoreapp1.0\jdenekat.dll
+--temp-output:d:\Projects\Angular2\jdenekat\jdenekat\obj\Debug\netcoreapp1.0\
+--out:d:\Projects\Angular2\jdenekat\jdenekat\bin\Debug\netcoreapp1.0\jdenekat.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -123,5 +123,5 @@
 --reference:C:\Users\jeff_000\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\jeff_000\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\jeff_000\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"d:\projects\angular2\jdenekat\jdenekat\obj\Debug\netcoreapp1.0\jdenekatdotnet-compile.deps.json",jdenekat.deps.json
-d:\projects\angular2\jdenekat\jdenekat\Startup.cs
+--resource:"d:\Projects\Angular2\jdenekat\jdenekat\obj\Debug\netcoreapp1.0\jdenekatdotnet-compile.deps.json",jdenekat.deps.json
+d:\Projects\Angular2\jdenekat\jdenekat\Startup.cs

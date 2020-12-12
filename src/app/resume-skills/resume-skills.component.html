@@ -1,0 +1,14 @@
+<div class="skills" fxLayout="column" fxLayout.gt-sm="row">
+  <div fxFlex fxFlex.gt-sm="22%">
+    <span class="skills-title">{{skills.title}}</span>
+  </div>
+  <div fxFlex>
+    <!-- skills has text entries or a description -->
+    <ul class="skills-list">
+      <li *ngFor="let skill of skills.skills">
+        <span class="skill-category">{{skill.title}}: </span>
+        <span class="skill-set">{{skill.description}}</span>
+      </li>
+    </ul>
+  </div>
+</div>

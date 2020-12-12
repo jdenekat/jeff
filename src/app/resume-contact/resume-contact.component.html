@@ -1,0 +1,22 @@
+<div class="resume-contact" fxLayout="column" fxLayout.gt-sm="row">
+  <div fxFlex fxFlex.gt-sm="35%">
+    <div fxLayout="column">
+      <div fxFlex fxFlexOrder="1" class="contact-name">
+        {{contact.name}}
+      </div>
+      <div fxFlex fxFlexOrder="2" class="contact-email" *ngIf="contact.email">
+        {{contact.email}}
+      </div>
+    </div>
+  </div>
+  <div fxFlex *ngIf="contact.email || contact.phones">
+    <div fxLayout="column">
+      <div *ngIf="contact.address" fxFlexOrder="3" class="contact-phones" fxFlex>
+        {{contact.address}}
+      </div>
+      <div *ngIf="contact.phones" fxFlexOrder="4" class="contact-phones" fxFlex>
+        {{contact.phones}}
+      </div>
+    </div>
+  </div>
+</div>

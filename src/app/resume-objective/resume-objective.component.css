@@ -1,0 +1,22 @@
+div.objective {
+  margin-top: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0.5em;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.0em;
+  line-height: 1.2em;
+}
+
+span.objective-title {
+  font-weight: bold;
+  font-style: italic;
+ }
+
+span.objective-text {
+  font-style: italic;
+ }

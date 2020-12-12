@@ -1,0 +1,57 @@
+div.section-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-style: italic;
+  border-bottom: 1px solid black;
+}
+div.resume-section {
+  margin-top: 0px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.0em;
+  line-height: 1.2em;
+}
+
+p.entry-location {
+  font-weight: bold;
+  font-size: 1.1em;
+  line-height: 1.1em;
+  margin: 0;
+  padding: 0;
+}
+span.entry-date {
+  font-weight: normal;
+}
+
+p.entry-title {
+  font-style: italic;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  margin: 0;
+  padding: 0;
+}
+
+p.item-name {
+  padding: 0;
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+p.item-description {
+  line-height: 1.0em;
+  padding: 0;
+  margin: 0;
+}
+
+ul.item-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}

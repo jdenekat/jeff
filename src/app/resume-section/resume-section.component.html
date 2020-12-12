@@ -1,0 +1,6 @@
+<div class="section-title">{{section.title}}</div>
+<div class="ui grid resume-section">
+  <div class="row" *ngFor="let entry of section.entries">
+    <app-resume-entry [entry]="entry" [section]="section"></app-resume-entry>
+  </div>
+</div>

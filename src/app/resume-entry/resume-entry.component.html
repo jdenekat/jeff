@@ -1,0 +1,31 @@
+<div fxLayout="column" fxLayout.gt-sm="row" fxLayoutGap.gt-sm="1.5em" class="resume-entry">
+  <div fxFlex fxFlex.gt-sm="20%">
+    <div fxLayout="row" fxLayout.gt-sm="column">
+      <div fxFlex class="entry-location">{{entry.location}}</div>
+      <div fxFlex class="entry-date">
+        <span *ngIf="entry.start">{{entry.start | date: 'MMM yyyy'}}</span>
+        <span *ngIf="entry.start && (entry.end || entry.toPresent)"> -- </span>
+        <span *ngIf="entry.start && entry.end">{{entry.end | date: 'MMM yyyy'}}</span>
+        <span *ngIf="entry.start && entry.toPresent">{{section.present}}</span>
+      </div>
+    </div>
+  </div>
+  <div fxFlex fxFlexOffset.gt-sm="2%">
+    <div fxLayout="column">
+      <div class="entry-title">{{entry.title}}</div>
+      <div class="entry-description" *ngIf="entry.description">{{entry.description}}</div>
+      <div *ngFor="let item of entry.sections">
+        <p class="item-name" *ngIf="item.name">{{item.name}}</p>
+        <p class="item-description" *ngIf="item.description">{{item.description}}</p>
+        <ul class="item-list" *ngIf="item.entries">
+          <li class="item-entry" *ngFor="let itemEntry of item.entries">
+            <div *ngIf="isLink(itemEntry)">
+              <a [href]="linkHref(itemEntry)" target="_blank">{{linkText(itemEntry)}}</a>
+            </div>
+            <div *ngIf="!isLink(itemEntry)">{{itemEntry}}</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+div.resume-contact {
+  margin-top: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.0em;
+  line-height: 1.2em;
+  border-bottom: 1px solid black;
+}
+
+div.resume-contact .row {
+  padding: 0;
+  margin: 0;
+}
+
+div.contact-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+div.contact-email {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+div.contact-address {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+div.contact-phones {
+  font-style: italic;
+  margin-bottom: 0;
+}

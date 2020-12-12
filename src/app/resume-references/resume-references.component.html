@@ -1,0 +1,6 @@
+<div class="section-title">{{refs.title}}</div>
+<div class="ui grid resume-reference">
+  <div class="row" *ngFor="let ref of refs.references">
+    <app-resume-reference [reference]="ref"></app-resume-reference>
+  </div>
+</div>
