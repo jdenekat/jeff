@@ -12,7 +12,7 @@ export class Resume {
   private _education: ResumeSection;
   private _publications: ResumeSection;
   private _codeSamples: ResumeSection;
-  private references: ResumeReferences;
+  private _references: ResumeReferences;
   public other: ResumeSection[];
   public present = 'present';
 
@@ -27,6 +27,9 @@ export class Resume {
 
   public get codeSamples(): ResumeSection { return this._codeSamples; }
   public set codeSamples(section: ResumeSection) { section.resume = this; this._codeSamples = section; }
+
+  public get references(): ResumeReferences { return this._references; }
+  public set references(refs: ResumeReferences) { this._references = refs; }
 
   public add(section: ResumeSection) {
     if (!this.other) {

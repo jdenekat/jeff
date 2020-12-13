@@ -1,10 +1,9 @@
-@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
-
 body {
   background-color: darkcyan;
 }
+
 .ui.menu .item img.logo {
-    margin-right: 1.5em;
+  margin-right: 1.5em;
 }
 
 form.ui.segment.form {
@@ -50,7 +49,17 @@ ul.ui.list li:before {
   width: 100%;
 }
 
-.ui.grid > :not(.row).column.gridleft,
-.ui.grid > .row > .column.gridleft {
+.ui.grid> :not(.row).column.gridleft,
+.ui.grid>.row>.column.gridleft {
   padding-left: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }

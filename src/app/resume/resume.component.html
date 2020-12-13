@@ -1,23 +1,23 @@
 <div class="resume">
   <app-resume-contact [contact]="resume.contact"></app-resume-contact>
 
-  <app-resume-objective [objective]="resume.objective" *ngIf="resume.objective && !resume.objective.isEmpty">
+  <app-resume-objective [objective]="resume.objective" *ngIf="resume.objective">
   </app-resume-objective>
 
-  <app-resume-skills [skills]="resume.skills" *ngIf="resume.skills && !resume.skills.isEmpty">
+  <app-resume-skills [skills]="resume.skills" *ngIf="resume.skills">
   </app-resume-skills>
 
-  <app-resume-section [section]="resume.experience" *ngIf="resume.experience && !resume.experience.isEmpty">
+  <app-resume-section [section]="resume.experience" *ngIf="resume.experience">
   </app-resume-section>
-  <app-resume-section [section]="resume.education" *ngIf="resume.education && !resume.education.isEmpty">
+  <app-resume-section [section]=" resume.education" *ngIf="resume.education">
   </app-resume-section>
-  <app-resume-section [section]="resume.publications" *ngIf="resume.publications && !resume.publications.isEmpty">
+  <app-resume-section [section]=" resume.publications" *ngIf="resume.publications">
   </app-resume-section>
-  <app-resume-section [section]="resume.codeSamples" *ngIf="resume.codeSamples && !resume.codeSamples.isEmpty">
+  <app-resume-section [section]="resume.codeSamples" *ngIf="resume.codeSamples">
   </app-resume-section>
-  <div *ngIf="resume.others && resume.others.length>0">
+  <div *ngIf="resume.other && resume.other.length>0">
     <app-resume-section *ngFor="let section of resume.other" [section]="section"></app-resume-section>
   </div>
-  <app-resume-section [section]="resume.references" *ngIf="resume.references && !resume.references.isEmpty">
+  <app-resume-section [section]="resume.references" *ngIf="resume.references">
   </app-resume-section>
 </div>

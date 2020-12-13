@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MaterialModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
@@ -15,6 +14,7 @@ import { ResumeEntryComponent } from './resume-entry/resume-entry.component';
 import 'hammerjs';
 import { ResumeReferencesComponent } from './resume-references/resume-references.component';
 import { ResumeReferenceComponent } from './resume-reference/resume-reference.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -31,8 +31,8 @@ import { ResumeReferenceComponent } from './resume-reference/resume-reference.co
   ],
   imports: [
     BrowserModule,
-    MaterialModule,
-    FlexLayoutModule.forRoot()
+    FlexLayoutModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
