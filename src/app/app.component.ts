@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { Article } from './article/article.model';
-import { Resume } from './models/resume.model';
-import { ResumeContact } from './models/resume-contact.model';
-import { ResumeObjective } from './models/resume-objective.model';
-import { ResumeSkills } from './models/resume-skills.model';
-import { ResumeSection } from './models/resume-section.model';
-import { ResumeEntry } from './models/resume-entry.model';
-import { Section } from './models/section.model';
-import { ResumeReferences } from './models/resume-references.model';
 import { Reference } from './models/reference.model';
+import { ResumeContact } from './models/resume-contact.model';
+import { ResumeEntry } from './models/resume-entry.model';
+import { ResumeObjective } from './models/resume-objective.model';
+import { ResumeReferences } from './models/resume-references.model';
+import { ResumeSection } from './models/resume-section.model';
+import { ResumeSkills } from './models/resume-skills.model';
+import { Resume } from './models/resume.model';
+import { Section } from './models/section.model';
 
 @Component({
   selector: 'app-root',
@@ -75,13 +75,14 @@ export class AppComponent {
     skills.title = 'SKILLS';
     const langs = new ResumeEntry();
     langs.title = 'Languages';
-    langs.description = `C#, T-SQL, HTML, JS/Typescript`;
+    langs.description = `C#, SQL, HTML, JS/Typescript, Python, CSS/SASS`;
     const tech = new ResumeEntry();
     tech.title = 'Technologies';
-    tech.description = `ASP.NET, MVC/MVVM, Web Services/REST, Azure, HTML5, Angular/AngularJS`;
+    tech.description = `Angular, .NET Core, ASP.NET Core, MVC/MVVM, Web Services/REST, Azure,
+      AKS, NServiceBus, Docker, Kubernetes, Helm, Git, GitHub Actions`;
     const data = new ResumeEntry();
     data.title = 'Database';
-    data.description = `SQL Server 2012, ADO.NET`;
+    data.description = `SQL Server, Postgres, ADO.NET, SSIS`;
     const procs = new ResumeEntry();
     procs.title = 'Process/Test';
     procs.description = `Agile, TDD, NUnit, FIT, tsqlUnit, Jasmine/Protractor`;
@@ -118,9 +119,14 @@ export class AppComponent {
      terumo.toPresent = true;
      const tWeb = new Section();
      tWeb.entries = [
-       `Work with NServiceBus microservices, Angular 9+ front end, PostGre data and
+       `Working with NServiceBus microservices, Postgres databases and
         containerized deployments on Azure/AKS using Docker and Helm.`,
-       `Visual Studio, VSCode, Git, Angular, PSql, Typescript, C#, Docker, Helm`,
+       `Angular 9+ front end work for client-facing web sites.`,
+       `Developed common Angular library components including respository template.`,
+       `CI/CD pipeline using GitHub Actions and Powershell scripts.`,
+       `Delivered ARM7 application for use on a medical device including bash test scripts.`,
+       `Mentoring other developers in Angular and styling, mentoring QA in web testing.`,
+       `Visual Studio, VSCode, PgAdmin, Git, Angular, SQL, Typescript, C#, Docker, K8S, Helm`,
        `Agile, SAFE, Scrum`
      ];
      terumo.sections = [ tWeb ];
@@ -130,7 +136,7 @@ export class AppComponent {
    private buildSketchupExp(): ResumeEntry {
      const sketchup = new ResumeEntry();
      sketchup.location = 'Sketchup';
-     sketchup.title = 'Seniore Software Engineer';
+     sketchup.title = 'Senior Software Engineer';
      sketchup.start = new Date(2017, 7, 1);
      sketchup.end = new Date(2019, 11, 1);
      const sWeb = new Section();

@@ -20,7 +20,9 @@
         <ul class="item-list" *ngIf="item.entries">
           <li class="item-entry" *ngFor="let itemEntry of item.entries">
             <div *ngIf="isLink(itemEntry)">
-              <a [href]="linkHref(itemEntry)" target="_blank">{{linkText(itemEntry)}}</a>
+              <a [href]="linkHref(itemEntry)" target="_blank" rel="noopener noreferrer" (click)="followLink($event)">
+                {{linkText(itemEntry)}}
+              </a>
             </div>
             <div *ngIf="!isLink(itemEntry)">{{itemEntry}}</div>
           </li>

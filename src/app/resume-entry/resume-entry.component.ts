@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { GoogleAnalyticsService } from '../google-analytics.service';
 import { ResumeEntry } from '../models/resume-entry.model';
 import { ResumeSection } from '../models/resume-section.model';
 
@@ -11,7 +12,7 @@ export class ResumeEntryComponent implements OnInit {
   @Input() entry: ResumeEntry;
   @Input() section: ResumeSection;
 
-  constructor() { }
+  constructor(private ga: GoogleAnalyticsService) { }
 
   ngOnInit() {
   }
@@ -30,5 +31,13 @@ export class ResumeEntryComponent implements OnInit {
     const link = item.substr(5);
     const args = link.split('|');
     return args[0];
+  }
+
+  followLink(event: any): void {
+    var url = event.target.href;
+    this.ga.emitEvent('Resume', 'Link', url);
+    console.log(`following link to ${url}`);
+    window.open(url, '_blank');
+    event.preventDefault();
   }
 }
