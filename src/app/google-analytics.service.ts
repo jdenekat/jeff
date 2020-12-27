@@ -23,4 +23,8 @@ export class GoogleAnalyticsService {
       'value': value
     });
   }
+
+  public emitException(description: string, fatal?: boolean): void {
+    this.gtag('event', 'exception', { description, fatal });
+  }
 }

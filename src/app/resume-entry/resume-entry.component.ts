@@ -36,7 +36,6 @@ export class ResumeEntryComponent implements OnInit {
   followLink(event: any): void {
     var url = event.target.href;
     this.ga.emitEvent('Resume', 'Link', url);
-    console.log(`following link to ${url}`);
     window.open(url, '_blank');
     event.preventDefault();
   }
